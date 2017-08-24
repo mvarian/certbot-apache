@@ -11,9 +11,11 @@
     - software-properties-common
 
 - name: Enable Certbot Repository (DEB)
-  apt_repository:
-    repo: ppa:certbot/certbot
-    state: present
+  command: add-apt-repository ppa:certbot/certbot
+
+- name: Update all packages to the latest version
+  apt:
+    upgrade: dist
 
 - name: Install certbot-apache (DEB)
   package: name={{item}} state=latest
