@@ -1,0 +1,24 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: Michael Varian
+  company: NorthSky Technology www.northskytech.com
+  description: Install certbot with the apache plugin (certbot-apache) on Debian and CentOS/RHEL-like systems.
+  license: MIT
+  min_ansible_version: 1.9.6
+  platforms:
+    - name: EL
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - precise
+        - trusty
+        - xenial
+    - name: Debian
+      versions:
+        - wheezy
+        - jessie
+  galaxy_tags:
+    - system
