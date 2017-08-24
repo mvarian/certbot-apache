@@ -5,3 +5,6 @@
 
 - include: RedHat.yml
   when: ansible_os_family == 'RedHat'
+
+- include: generate.yml
+  when: certbot_generate_certificates
