@@ -9,6 +9,8 @@
   package: name={{item}} state=latest
   with_items:
     - software-properties-common
+
+- name: Enable Certbot Repository (DEB)
   apt_repository:
     repo: ppa:certbot/certbot
     state: present
